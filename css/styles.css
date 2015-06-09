@@ -1,0 +1,50 @@
+body {
+  padding-top: 50px;
+}
+
+nav {
+  height: 46px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+}
+
+nav span {
+  line-height: 46px;
+}
+
+.subnav {
+  height: 46px;
+  border-bottom: 1px solid #ddd;
+}
+
+.page-wrapper {
+  background: #fcfcfc;
+  height: 100%;
+}
+
+nav img {
+  margin-top: 7px;
+}
+
+.tweets-wrapper {
+  margin-top: 40px;
+}
+
+.tweets {
+  margin-top: 40px;
+}
+
+.tweets-list {
+  -webkit-padding-start: 0px;
+  background: white;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+.tweets-list li {
+  padding: 15px 0 15px 15px;
+  border-bottom: 1px solid #dfdfdf;
+  list-style-type: none;
+  color: #333;
+}

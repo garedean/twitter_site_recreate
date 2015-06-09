@@ -1,0 +1,21 @@
+<div class="row tweets">
+  <div class="col-sm-8 col-sm-offset-2">
+
+    <form {{action 'addTweet' on="submit"}}>
+      <div class="form-group">
+        {{input id="tweet" class="form-control" value=tweet}}
+      </div>
+    </form>
+
+    <h5>The Tweets From Today:</h5>
+
+    <ul class="tweets-list">
+      {{#each post in controller}}
+        <li {{action 'expandTweet'}}>
+          {{post.tweetBody}}
+          {{post.tweetDate}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
