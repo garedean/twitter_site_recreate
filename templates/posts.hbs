@@ -3,7 +3,7 @@
 
     <form {{action 'addTweet' on="submit"}}>
       <div class="form-group">
-        {{input id="tweet" class="form-control" value=tweet}}
+        {{input id="tweet" class="form-control" value=tweet placeholder="Enter your tweet here!" maxlength="141" valuebinding="tweet"}}
       </div>
     </form>
 
@@ -11,9 +11,11 @@
 
     <ul class="tweets-list">
       {{#each post in controller}}
-        <li {{action 'expandTweet'}}>
+        <li>
           {{post.tweetBody}}
-          {{post.tweetDate}}
+          <span>
+            {{post.tweetDate}}
+          </span>
         </li>
       {{/each}}
     </ul>

@@ -8,6 +8,7 @@ Tweeter.PostsController = Ember.ArrayController.extend({
       tweets.addObject({body: this.get('tweet'),
                         timestamp: new Date()
                         });
+      this.set('tweet', '');
     }
   }
 });
